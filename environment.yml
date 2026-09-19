@@ -1,0 +1,30 @@
+name: ecuador-enso-som
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  # core array / dataframe
+  - numpy
+  - pandas
+  - scipy
+  # gridded data + storage
+  - xarray
+  - zarr
+  - netcdf4
+  - dask
+  - gcsfs          # anonymous read of the public ARCO-ERA5 bucket
+  # geospatial
+  - geopandas
+  - shapely
+  - cartopy
+  - pyproj
+  # plotting
+  - matplotlib
+  - cmweather      # ChaseSpectral colormap used for the IVT composites
+  # analysis
+  - scikit-learn   # adjusted / normalized mutual information
+  - jupyterlab
+  - nbformat
+  - pip
+  - pip:
+      - minisom    # the SOM implementation; not packaged on conda-forge

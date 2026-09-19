@@ -1,0 +1,3 @@
+domain,quantization_error,topographic_error
+"original (35x35 deg, 141x141)",174.826,0.423
+"guayaquil-centered (17.5x17.5 deg, 70x70)",80.902,0.299
