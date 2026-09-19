@@ -41,6 +41,7 @@ change the answer.
 | [`03_era5_wind_retrieval.ipynb`](notebooks/03_era5_wind_retrieval.ipynb) | Why ARCO-ERA5's chunk geometry makes a sparse day list cheap; snapshot vs. daily mean; the 850 hPa-below-ground terrain artifact and how to prove it |
 | [`04_som_construction.ipynb`](notebooks/04_som_construction.ipynb) | Vector wind vs. wind speed as SOM input; per-cell standardization; compositing physical fields rather than SOM weights; QE/TE; **domain sensitivity** |
 | [`05_ivt_fields.ipynb`](notebooks/05_ivt_fields.ipynb) | IVT column integral on uneven levels; vector mean vs. mean magnitude; repeating the terrain check for a new quantity; real dry corridor vs. masked artifact |
+| [`06_precipitation_composites.ipynb`](notebooks/06_precipitation_composites.ipynb) | Gridded CHIRPS **and** IMERG composites per node — mean rainfall and 25/50 mm exceedance frequency; **reduce where the data lives** (1.23 GB read → 2.0 MB result); how far the two products disagree node by node |
 
 ## Three results worth knowing before you start
 
@@ -94,7 +95,7 @@ IMERG Final Daily V07 from NASA GES DISC (via `earthaccess`), and ERA5 monthly m
 ## Layout
 
 ```
-├── notebooks/        the five notebooks, run in order
+├── notebooks/        the six notebooks, run in order
 ├── src/config.py     all paths, domain bounds, thresholds, SOM parameters
 ├── data/             reference inputs + cached intermediates (see above)
 ├── figures/          notebook output

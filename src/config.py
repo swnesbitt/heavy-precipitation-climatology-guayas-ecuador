@@ -164,6 +164,12 @@ G = 9.80665               # m/s^2, standard gravity
 # in every SOM node, which is what distinguishes an artifact from a signal.
 TERRAIN_MASK_M = 1500
 
+# Drawn as a reference contour on precipitation maps -- NOT a mask. Roughly the
+# height at which the coastal plain gives way to the Andean slope, so it marks
+# where an orographic rainfall maximum is expected. Distinct in purpose from
+# TERRAIN_MASK_M above, which hides non-physical reanalysis values.
+TERRAIN_CONTOUR_M = 750
+
 # --------------------------------------------------------------------------- #
 # SOM configuration
 #
