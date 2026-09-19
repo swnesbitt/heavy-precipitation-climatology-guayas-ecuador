@@ -15,6 +15,9 @@ data/som_node_summary.csv
 data/som_node_summary_with_ivt.csv
 data/som_grid_diagnostics.csv
 
+# cartopy Natural Earth cache (downloaded on first use)
+cartopy_data/
+
 # figure output
 figures/*.png
 figures/*.pdf

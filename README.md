@@ -112,10 +112,13 @@ results against them.
 - **Daily ENSO classification conflates ENSO with the annual cycle**, since El Niño days are not
   uniformly distributed across calendar months even within the wet season. A stricter variant
   would use month-stratified thresholds.
-- **IMERG and CHIRPS are not interchangeable in absolute terms.** IMERG runs systematically lower
-  over this domain (documented behaviour for tropical/orographic rainfall). Percentiles and
-  exceedance counts are computed from each product's own distribution; any figure showing both
-  must say which product a threshold came from.
+- **IMERG and CHIRPS are not interchangeable, and the offset between them is not a constant.**
+  Pooled over all days their means differ by only ~10%, but the ratio is strongly
+  intensity-dependent: IMERG exceeds CHIRPS on near-dry days, crosses over around 10 mm/day, and
+  falls to roughly a third of CHIRPS on the wettest days (~0.5 on the 137 heavy El Niño days
+  this analysis selects). No scalar correction reconciles them. Percentiles and exceedance
+  counts are therefore computed within each product, never transferred between them, and any
+  figure showing both must say which product a threshold came from. Quantified in notebook 01.
 - **A SOM is a classification, not a decomposition.** There is no variance-explained and no
   significance test. Its output is exactly as defensible as the documented choices — which is
   why notebook 04 measures grid size and domain sensitivity rather than asserting them.
